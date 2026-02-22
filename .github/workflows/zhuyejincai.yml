@@ -1,0 +1,21 @@
+name: zhuyejincai
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '51 2/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: zhuyejincai
+        env:
+          qh0113: ${{ secrets.qh0113 }}
+        run: |
+          echo $qh0113 | jq -r .rqi85 | /bin/bash
+          echo $suo33197 | jq -r .zvg9 | /bin/bash
+          echo $t4110 | jq -r .l45853 | /bin/bash
+          echo $vume5345 | jq -r .tevzr8 | /bin/bash
+
